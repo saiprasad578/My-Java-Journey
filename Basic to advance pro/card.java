@@ -1,4 +1,4 @@
-public class card{
+public class Card{
     public static void main(String[] args) {
         int cardNumber = 123456789;
         String cardHolderName = "John Doe";
