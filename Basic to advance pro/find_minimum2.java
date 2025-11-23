@@ -1,4 +1,4 @@
-class Solution {
+class find_minimum2 {
     public int minimumOperations(int[] nums) {
         int total = 0;
         for (int v : nums) {
