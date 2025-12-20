@@ -8,7 +8,7 @@ class person {
     }
 }
 
-class Student extends Person {
+class Student extends person {
     int grade;
     Student(String name, int grade) {
         super(name);
@@ -21,7 +21,7 @@ class Student extends Person {
 
 public class Main {
     public static void main(String[] args) {
-        Person p = new Person("Alice");
+        person p = new person("Alice");
         Student s = new Student("Bob", 10);
         p.display();
         s.display();
