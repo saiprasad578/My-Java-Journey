@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class PalindromeNumber {
+public class logic {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
