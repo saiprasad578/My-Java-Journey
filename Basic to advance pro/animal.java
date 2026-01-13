@@ -1,19 +1,19 @@
-class animal {
+class Animal {
     void sound() {
         System.out.println("Animal makes a sound");
     }
 }
 
-class Dog extends animal {
+class Dog extends Animal {
     void sound() {
         System.out.println("Dog barks");
     }
 }
 
-public class Main {
+public class test {
     public static void main(String[] args) {
-        animal a = new animal();
-        animal d = new Dog();
+        Animal a = new Animal();
+        Animal d = new Dog();
         a.sound();
         d.sound();
     }
