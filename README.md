@@ -20,4 +20,4 @@ These programs are intended for beginners learning Java. They provide a hands-on
 Files and etc 
 OperatorsDemo.java – Demonstrates basic operator usage.
 OperatorExample.java – Additional example covering combined and compound operators.
-This repository contains various Java pattern programs designed to help understand loops, conditions, and logic building in Java.
+This repository contains various Java pattern programs designed to help understand loops, conditions, and logic building in Java. etc
