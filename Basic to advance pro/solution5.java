@@ -1,4 +1,4 @@
-class solution15 {
+class solution5 {
     public boolean isOneBitCharacter(int[] bits) {
         int i = 0;
         while (i < bits.length - 1) {
