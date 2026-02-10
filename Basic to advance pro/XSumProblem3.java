@@ -18,7 +18,10 @@ public class XSumProblem3 {
                 list.add(new int[]{e.getKey(), e.getValue()});
             }
 
-            list.sort((a, b) -> a[1] == b[1] ? b[0] - a[0] : b[1] - a[1]);
+            list.sort((a, b) -> {
+                if (a[1] != b[1]) return Integer.compare(b[1], a[1]);
+                return Integer.compare(b[0], a[0]);
+            });
 
             Set<Integer> keep = new HashSet<>();
             for (int t = 0; t < Math.min(x, list.size()); t++) {

@@ -4,6 +4,8 @@ public class XSumProblem2 {
 
     public int[] findXSum(int[] nums, int k, int x) {
         int n = nums.length;
+        if (k > n) return new int[0];
+
         int[] res = new int[n - k + 1];
 
         for (int i = 0; i <= n - k; i++) {
@@ -18,7 +20,10 @@ public class XSumProblem2 {
                 list.add(new int[]{e.getKey(), e.getValue()});
             }
 
-            list.sort((a, b) -> a[1] == b[1] ? b[0] - a[0] : b[1] - a[1]);
+            list.sort((a, b) -> {
+                if (a[1] != b[1]) return Integer.compare(b[1], a[1]);
+                return Integer.compare(b[0], a[0]);
+            });
 
             Set<Integer> keep = new HashSet<>();
             for (int t = 0; t < Math.min(x, list.size()); t++) {
