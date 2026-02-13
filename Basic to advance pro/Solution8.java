@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class XSumProblem3 {
+public class Solution8 {
 
     public int[] findXSum(int[] nums, int k, int x) {
         int n = nums.length;
@@ -16,12 +16,17 @@ public class XSumProblem3 {
         for (int i = 0; i <= n - k; i++) {
 
             List<int[]> list = new ArrayList<>();
-            for (var e : freq.entrySet())
-                list.add(new int[]{e.getKey(), e.getValue()});
 
-            list.sort((a, b) ->
-                a[1] != b[1] ? b[1] - a[1] : b[0] - a[0]
-            );
+            for (Map.Entry<Integer, Integer> e : freq.entrySet()) {
+                list.add(new int[]{e.getKey(), e.getValue()});
+            }
+
+            list.sort(new Comparator<int[]>() {
+                public int compare(int[] a, int[] b) {
+                    if (a[1] != b[1]) return b[1] - a[1];
+                    return b[0] - a[0];
+                }
+            });
 
             Set<Integer> keep = new HashSet<>();
             for (int t = 0; t < Math.min(x, list.size()); t++)
@@ -45,10 +50,9 @@ public class XSumProblem3 {
     }
 
     public static void main(String[] args) {
-        XSumProblem3 s = new XSumProblem3();
+        Solution8 s = new Solution8();
         int[] nums = {9, 8, 7, 9, 6, 9, 8, 8, 7};
         int k = 4, x = 3;
         System.out.println(Arrays.toString(s.findXSum(nums, k, x)));
-        // [33, 24, 31, 32, 31, 32]
     }
 }
