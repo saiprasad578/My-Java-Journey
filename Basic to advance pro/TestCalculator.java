@@ -1,4 +1,4 @@
-class method2 {
+class Method2 {
     // Multiply two integers
     public int multiply(int a, int b) {
         return a * b;
@@ -15,9 +15,9 @@ class method2 {
     }
 }
 
-class TestCalculator {
+public class TestCalculator {
     public static void main(String[] args) {
-        Calculator calc = new Calculator();
+        Method2 calc = new Method2();
 
         System.out.println("Product of two integers: " + calc.multiply(5, 4));
         System.out.println("Product of three integers: " + calc.multiply(2, 3, 4));
