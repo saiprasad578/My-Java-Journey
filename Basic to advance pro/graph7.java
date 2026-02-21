@@ -15,7 +15,7 @@ public class graph7 {
     }
 
     public static void main(String[] args) {
-        Graph g = new Graph();
+        graph7 g = new graph7();   // FIXED HERE
         g.addEdge(1, 2);
         g.addEdge(1, 3);
         g.addEdge(2, 4);
