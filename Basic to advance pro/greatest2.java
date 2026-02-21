@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class greatest2 {
     public int maxSumDivThree(int[] nums) {
         int sum = 0;
         List<Integer> r1 = new ArrayList<>();

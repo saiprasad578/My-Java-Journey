@@ -1,4 +1,4 @@
-public class graph8 {
+public class GraphMatrix {
     private int[][] m;
     private int n;
 
