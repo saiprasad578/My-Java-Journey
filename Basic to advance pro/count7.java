@@ -1,21 +1,27 @@
-class Solution {
+class count7 {
     public int countCollisions(String directions) {
-        int collisions = 0;
-        int movingRight = 0;
+        int n = directions.length();
+        int left = 0, right = n - 1;
         
-        for (char c : directions.toCharArray()) {
-            if (c == 'R') {
-                movingRight++;
-            } else if (c == 'S') {
-                collisions += movingRight;
-                movingRight = 0;
-            } else {
-                if (movingRight > 0) {
-                    collisions += movingRight + 1;
-                    movingRight = 0;
-                } 
+        // skip leading L
+        while (left < n && directions.charAt(left) == 'L') {
+            left++;
+        }
+        
+        // skip trailing R
+        while (right >= 0 && directions.charAt(right) == 'R') {
+            right--;
+        }
+        
+        int collisions = 0;
+        
+        for (int i = left; i <= right; i++) {
+            char c = directions.charAt(i);
+            if (c != 'S') {
+                collisions++;
             }
         }
+        
         return collisions;
     }
 }
