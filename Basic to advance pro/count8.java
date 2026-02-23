@@ -1,4 +1,4 @@
-class Solution {
+class count8 {
     public int countCollisions(String directions) {
         int collisions = 0;
         int state = 0;
