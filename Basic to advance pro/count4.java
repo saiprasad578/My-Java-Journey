@@ -1,3 +1,5 @@
+import java.util.*;
+
 class count4 {
 
     public int countTrapezoids(int[][] points) {
@@ -25,16 +27,16 @@ class count4 {
                     k = (1.0 * (y2 - y1)) / (x2 - x1);
                     b = (1.0 * (y1 * dx - x1 * dy)) / dx;
                 }
-                if (k == -0.0) {
-                    k = 0.0;
-                }
-                if (b == -0.0) {
-                    b = 0.0;
-                }
+
+                if (k == -0.0) k = 0.0;
+                if (b == -0.0) b = 0.0;
+
                 int mid = (x1 + x2) * 10000 + (y1 + y2);
+
                 slopeToIntercept
                     .computeIfAbsent(k, key -> new ArrayList<>())
                     .add(b);
+
                 midToSlope
                     .computeIfAbsent(mid, key -> new ArrayList<>())
                     .add(k);
@@ -42,13 +44,13 @@ class count4 {
         }
 
         for (List<Double> sti : slopeToIntercept.values()) {
-            if (sti.size() == 1) {
-                continue;
-            }
+            if (sti.size() == 1) continue;
+
             Map<Double, Integer> cnt = new TreeMap<>();
             for (double b : sti) {
                 cnt.put(b, cnt.getOrDefault(b, 0) + 1);
             }
+
             int sum = 0;
             for (int count : cnt.values()) {
                 ans += sum * count;
@@ -57,13 +59,13 @@ class count4 {
         }
 
         for (List<Double> mts : midToSlope.values()) {
-            if (mts.size() == 1) {
-                continue;
-            }
+            if (mts.size() == 1) continue;
+
             Map<Double, Integer> cnt = new TreeMap<>();
             for (double k : mts) {
                 cnt.put(k, cnt.getOrDefault(k, 0) + 1);
             }
+
             int sum = 0;
             for (int count : cnt.values()) {
                 ans -= sum * count;
