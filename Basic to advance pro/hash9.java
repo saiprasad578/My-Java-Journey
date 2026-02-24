@@ -3,9 +3,11 @@ import java.util.LinkedList;
 public class hash9 {
 
     static int SIZE = 10;
-    static LinkedList<Integer>[] table = new LinkedList[SIZE];
+    static LinkedList<Integer>[] table;
 
+    @SuppressWarnings("unchecked")
     static void initialize() {
+        table = new LinkedList[SIZE];  // create raw array first
         for (int i = 0; i < SIZE; i++) {
             table[i] = new LinkedList<>();
         }
