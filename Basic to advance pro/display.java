@@ -12,7 +12,7 @@ class display {
     }
 
     public static void main(String[] args) {
-        Display d = new Display();
+        display d = new display();
 
         d.show(50);
         d.show("Hello Java");
