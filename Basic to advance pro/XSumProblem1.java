@@ -23,7 +23,7 @@ public class XSumProblem1 {
         XSumProblem1 s = new XSumProblem1();
         int[] nums = {1,1,2,2,3,4,2,3};
         int k = 6, x = 2;
-        System.out.println(Arrays.toString(s.findXSum(nums, k, x)));
+       
         // Expected: [6, 10, 12]
     }
 }
