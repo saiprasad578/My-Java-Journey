@@ -49,6 +49,6 @@ public class XSumProblemShort {
         XSumProblemShort s = new XSumProblemShort();
         int[] nums = {5, 5, 1, 2, 2, 2, 3, 4};
         int k = 5, x = 2;
-        System.out.println(Arrays.toString(s.findXSum(nums, k, x)));
+       
     }
 }
