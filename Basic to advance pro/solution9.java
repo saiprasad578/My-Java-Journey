@@ -16,7 +16,7 @@ class solution26 {
                 diff[i + 1][j] += diff[i][j];
         int[][] res = new int[n][n];
         for (int i = 0; i < n; i++)
-            for (int j = 0; j < n; j++)
+             for (int j = 0; j < n; j++)
                 res[i][j] = diff[i][j];
         return res;
     }
