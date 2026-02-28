@@ -10,7 +10,6 @@ public class file {
             Socket socket = serverSocket.accept();
             System.out.println("Client connected!");
 
-            // Receive file name and file data
             DataInputStream dis = new DataInputStream(socket.getInputStream());
             String fileName = dis.readUTF(); // Read file name from client
             FileOutputStream fos = new FileOutputStream("received_" + fileName);
