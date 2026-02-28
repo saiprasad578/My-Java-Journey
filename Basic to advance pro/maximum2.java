@@ -11,7 +11,7 @@ class maximum2 {
     }
 
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        maximum2  sol = new maximum2();
         System.out.println(sol.maxOperations("1001101")); // 4
         System.out.println(sol.maxOperations("00111"));   // 0
         System.out.println(sol.maxOperations("1010"));    // 3
