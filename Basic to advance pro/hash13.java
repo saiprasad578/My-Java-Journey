@@ -1,4 +1,4 @@
-public class hash23 {
+public class hash13 {
 
     public static int hash(String key) {
         int hash = 0;
