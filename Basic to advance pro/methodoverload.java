@@ -1,4 +1,5 @@
 class methodoverload {
+
     int add(int a, int b) {
         return a + b;
     }
@@ -12,7 +13,7 @@ class methodoverload {
     }
 
     public static void main(String[] args) {
-        OverloadExample obj = new OverloadExample();
+        methodoverload obj = new methodoverload();
 
         System.out.println("Add two ints: " + obj.add(10, 20));
         System.out.println("Add three ints: " + obj.add(10, 20, 30));
