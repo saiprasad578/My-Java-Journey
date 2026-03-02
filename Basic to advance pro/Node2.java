@@ -8,7 +8,8 @@ class Node2 {
     }
 }
 
-public class LinkedList {
+class MyLinkedList {
+
     Node2 head;
 
     void add(int data) {
@@ -36,7 +37,7 @@ public class LinkedList {
     }
 
     public static void main(String[] args) {
-        LinkedList list = new LinkedList();
+        MyLinkedList list = new MyLinkedList();
         list.add(10);
         list.add(20);
         list.add(30);
