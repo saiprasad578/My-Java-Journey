@@ -2,8 +2,7 @@ import java.util.Scanner;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 
-public class YearDetails {
-
+public class year {
     // Method to check leap year
     public static boolean isLeapYear(int year) {
         return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
