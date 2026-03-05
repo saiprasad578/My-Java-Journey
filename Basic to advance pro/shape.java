@@ -16,7 +16,7 @@ class Square extends shape {
     }
 }
 
-class Test {
+class test {
     public static void main(String[] args) {
         shape[] s = {new Circle(), new Square()};
         for (shape sh : s) {
