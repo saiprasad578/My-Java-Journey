@@ -4,4 +4,8 @@ public class Arrays {
         for (int i = 0; i < arr.length; i++)
             System.out.println(arr[i]);
     }
+
+    static void sort(int[] nums) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
 }
