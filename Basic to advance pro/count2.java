@@ -1,7 +1,7 @@
 import java.util.*;
 
-class count2 {
-    public int countTrapezoids(int[][] points) {
+public class count2 {
+     int countTrapezoids(int[][] points) {
         if (points == null || points.length == 0) return 0;
 
         int mod = 1_000_000_007;
