@@ -1,47 +1,23 @@
 import java.util.*;
 
 public class count2 {
-     int countTrapezoids(int[][] points) {
-        if (points == null || points.length == 0) return 0;
 
-        int mod = 1_000_000_007;
-        Arrays.sort(points, (a,b) -> Integer.compare(a[1], b[1]));
+    public static void main(String[] args) {
 
-        long res = 0;
-        int n = points.length;
-        long prevY = (long)points[0][1] - 1;
-        long count = 0;
-        List<Long> combs = new ArrayList<>();
+        int[][] points = {
+            {1,2},
+            {3,1},
+            {2,4}
+        };
 
-        for (int i = 0; i < n; i++) {
-            long y = points[i][1];
-
-            if (y != prevY) {
-                if (count >= 2) combs.add(count*(count-1)/2);
-                else combs.add(0L);
-
-                count = 1;
-                prevY = y;
-            } else {
-                count++;
+        Arrays.sort(points, new Comparator<int[]>() {
+            public int compare(int[] a, int[] b) {
+                return Integer.compare(a[1], b[1]);
             }
+        });
+
+        for(int[] p : points){
+            System.out.println(p[0] + " " + p[1]);
         }
-
-        if (count >= 2) combs.add(count*(count-1)/2);
-        else combs.add(0L);
-
-        int m = combs.size();
-
-        for (int i = 0; i < m; i++) {
-            if (combs.get(i) == 0) continue;
-
-            for (int j = i+1; j < m; j++) {
-                if (combs.get(j) == 0) continue;
-
-                res = (res + (combs.get(i) % mod) * (combs.get(j) % mod)) % mod;
-            }
-        }
-
-        return (int)res;
     }
 }
