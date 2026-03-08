@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+public class array_new {
     public int[] intersection(int[] nums1, int[] nums2) {
 
         // Step 1: Put nums1 numbers into a set (no duplicates allowed)
