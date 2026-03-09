@@ -1,4 +1,4 @@
-class solutions2 {
+class Solution23 {
     public int minNumberOperations(int[] target) {
         int res = target[0];
         for (int i = 1; i < target.length; i++) {
