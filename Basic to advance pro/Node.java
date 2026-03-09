@@ -1,10 +1,10 @@
-class Node {
+public class Node {
     int val;
     Node left, right;
     Node(int v){ val = v; }
 }
 
-public class Main {
+ class Main {
     static void inorder(Node r){
         if(r==null) return;
         inorder(r.left);
