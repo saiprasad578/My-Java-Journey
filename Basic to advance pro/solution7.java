@@ -1,4 +1,4 @@
-class solution7 {
+class Solution7 {
     public int[][] rangeAddQueries(int n, int[][] queries) {
         int[][] diff = new int[n + 1][n + 1];
         for (int[] q : queries) {

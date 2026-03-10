@@ -1,4 +1,4 @@
-class solution6 {
+class Solution6 {
     public int[][] rangeAssignQueries(int n, int[][] queries) {
         int[][] mat = new int[n][n];
         for (int[] q : queries) {

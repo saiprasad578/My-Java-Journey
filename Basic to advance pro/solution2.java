@@ -1,4 +1,4 @@
-public class solution2 {
+public class Solution2 {
     public boolean hasEvenDigits(String s) {
         while (s.length() > 2) {
             StringBuilder next = new StringBuilder();

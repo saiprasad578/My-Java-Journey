@@ -1,4 +1,4 @@
-public class solution3 {
+public class Solution3 {
     public boolean hasSumDivisibleByFive(String s) {
         while (s.length() > 2) {
             StringBuilder next = new StringBuilder();

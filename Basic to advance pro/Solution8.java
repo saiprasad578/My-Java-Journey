@@ -1,4 +1,4 @@
-class solution8 {
+class Solution8 {
     public long maxSubarraySum(int[] nums, int k) {
         int n = nums.length;
         long[] minPref = new long[k];
