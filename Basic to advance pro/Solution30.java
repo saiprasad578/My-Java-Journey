@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Solution30 {
+ class Solution30 {
 
     class DSU {
         int[] parent;
