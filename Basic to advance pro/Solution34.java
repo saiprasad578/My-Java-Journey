@@ -45,7 +45,7 @@ class Solution34 {
     }
 
     public static void main(String[] args) {
-        Account a = new Account();
+        Solution34 a = new Solution34();
 
         a.setAccountHolder("Sai Prasad");
         a.setBalance(5000);
