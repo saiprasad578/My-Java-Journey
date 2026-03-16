@@ -1,4 +1,4 @@
-class Account {
+class Solution34 {
     private double balance;
     private String accountHolder;
 
