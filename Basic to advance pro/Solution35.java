@@ -1,6 +1,6 @@
 import java.util.*;
 
-class problem2 {
+class Solution35 {
     public int[] getSneakyNumbers(int[] nums) {
         Arrays.sort(nums);
         int[] res = new int[2];
