@@ -1,4 +1,4 @@
-class solve3 {
+class Solution49 {
     public boolean isPalindrome(int x) {
         if (x < 0) return false;
         int original = x, reversed = 0;
