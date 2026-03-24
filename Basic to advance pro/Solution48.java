@@ -17,6 +17,4 @@ public class Solution48 {
 
         sc.close();
     }
-} {
-    
-}
+} 
