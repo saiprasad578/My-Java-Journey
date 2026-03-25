@@ -1,4 +1,4 @@
-class solve4 {
+class Solution52 {
     public int mostWordsFound(String[] sentences) {
         int max = 0;
         for (String s : sentences) {
