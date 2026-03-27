@@ -1,26 +1,33 @@
 class shape {
+
     void draw() {
         System.out.println("Drawing shape");
     }
 }
 
 class Circle extends shape {
+
+    @Override
     void draw() {
         System.out.println("Drawing circle");
     }
 }
 
 class Square extends shape {
+
+    @Override
     void draw() {
         System.out.println("Drawing square");
     }
 }
 
-class test {
+public class Test {
     public static void main(String[] args) {
-        shape[] s = {new Circle(), new Square()};
-        for (shape sh : s) {
-            sh.draw();
+
+        shape[] shapes = { new Circle(), new Square() };
+
+        for (shape s : shapes) {
+            s.draw();  // Runtime polymorphism
         }
     }
 }
