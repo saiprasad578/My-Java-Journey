@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class count2 {
+public class  Solution56 {
 
     public static void main(String[] args) {
 

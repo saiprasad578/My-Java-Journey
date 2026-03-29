@@ -4,7 +4,7 @@ public class Node {
     Node(int v){ val = v; }
 }
 
- class Main {
+ class main {
     static void inorder(Node r){
         if(r==null) return;
         inorder(r.left);
@@ -12,7 +12,7 @@ public class Node {
         inorder(r.right);
     }
 
-    public static void main(String[] args){
+    public static void main (String[] args){
         Node root = new Node(5);
         root.left = new Node(3);
         root.right = new Node(7);
