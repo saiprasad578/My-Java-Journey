@@ -1,6 +1,5 @@
 import java.util.*;
-
-class Time {
+class time {
     public int countUnguarded(int m, int n, int[][] guards, int[][] walls) {
         int[][] grid = new int[m][n];
 
