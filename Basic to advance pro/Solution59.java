@@ -1,4 +1,4 @@
-class solve5 {
+class Solution59 {
     public boolean almostPalindrome(int x) {
         if (x < 0) return false;
 
