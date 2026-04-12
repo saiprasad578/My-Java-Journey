@@ -1,4 +1,5 @@
-public class song {
+public class Solution65
+ {
     public static void main(String[] args) {
         String lyrics = """
                 Twinkle, twinkle, little star,
