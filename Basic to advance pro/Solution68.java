@@ -1,4 +1,4 @@
-public class speech {
+public class Solution68 {
     public static void main(String[] args) {
         System.out.println("Hello, everyone!");
         System.out.println("Welcome to my Java program.");
