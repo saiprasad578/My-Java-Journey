@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class stack {
+public class Solution69 {
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>();
 
