@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class AnagramCheck {
+public class Solution74 {
     public static void main(String[] args) {
         String str1 = "listen";
         String str2 = "silent";
