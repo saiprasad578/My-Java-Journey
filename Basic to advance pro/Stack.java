@@ -1,4 +1,4 @@
-class Solution75 {
+class Stack {
     int top;
     int max = 5;
     int arr[] = new int[max];
