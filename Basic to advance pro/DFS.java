@@ -1,24 +1,24 @@
 import java.util.*;
 
 public class DFS {
-    private LinkedList<Integer> adj[];
+    private ArrayList<LinkedList<Integer>> adj;
 
     DFS(int v) {
-        adj = new LinkedList[v];
+        adj = new ArrayList<>();
         for (int i = 0; i < v; i++) {
-            adj[i] = new LinkedList<>();
+            adj.add(new LinkedList<>());
         }
     }
 
     void addEdge(int v, int w) {
-        adj[v].add(w);
+        adj.get(v).add(w);
     }
 
     void dfsUtil(int v, boolean visited[]) {
         visited[v] = true;
         System.out.print(v + " ");
 
-        for (int n : adj[v]) {
+        for (int n : adj.get(v)) {
             if (!visited[n]) {
                 dfsUtil(n, visited);
             }
@@ -26,7 +26,7 @@ public class DFS {
     }
 
     void dfs(int start) {
-        boolean visited[] = new boolean[adj.length];
+        boolean visited[] = new boolean[adj.size()];
         dfsUtil(start, visited);
     }
 
