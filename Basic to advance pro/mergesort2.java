@@ -43,7 +43,7 @@ public class mergesort2 {
     }
 
     public static void main(String[] args) {
-        MergeSort obj = new MergeSort();
+        mergesort2 obj = new mergesort2();
         int arr[] = {12, 11, 13, 5, 6, 7};
 
         obj.sort(arr, 0, arr.length - 1);
