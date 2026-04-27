@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Arrays;
 
 public class Solution79 {
     static final int V = 5;
@@ -7,7 +7,7 @@ public class Solution79 {
         int min = Integer.MAX_VALUE, minIndex = -1;
 
         for (int v = 0; v < V; v++) {
-            if (!visited[v] && dist[v] <= min) {
+            if (!visited[v] && dist[v] < min) {
                 min = dist[v];
                 minIndex = v;
             }
@@ -19,13 +19,17 @@ public class Solution79 {
         int dist[] = new int[V];
         boolean visited[] = new boolean[V];
 
-        Arrays.fill(dist, Integer.MAX_VALUE);
+        // manual fill (safe)
+        for (int i = 0; i < V; i++) {
+            dist[i] = Integer.MAX_VALUE;
+        }
+
         dist[src] = 0;
 
         for (int count = 0; count < V - 1; count++) {
             int u = minDistance(dist, visited);
 
-            if (u == -1) break; // optional safety
+            if (u == -1) break;
 
             visited[u] = true;
 
@@ -54,7 +58,7 @@ public class Solution79 {
             {0, 3, 9, 2, 0}
         };
 
-        Solution79 t = new Solution79(); 
+        Solution79 t = new Solution79();
         t.dijkstra(graph, 0);
     }
 }
