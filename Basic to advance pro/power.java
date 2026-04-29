@@ -5,7 +5,7 @@ class power {
     }
 
     public static void main(String[] args) {
-        Power obj = new Power();
+        power obj = new power();
 
         int n = 16; // change value here
 
