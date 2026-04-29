@@ -1,21 +1,22 @@
 import java.util.*;
 
 public class BFS {
-    private LinkedList<Integer> adj[];
+    private List<List<Integer>> adj;
 
     BFS(int v) {
-        adj = new LinkedList[v];
+        adj = new ArrayList<>();
+
         for (int i = 0; i < v; i++) {
-            adj[i] = new LinkedList<>();
+            adj.add(new ArrayList<>());
         }
     }
 
     void addEdge(int v, int w) {
-        adj[v].add(w);
+        adj.get(v).add(w);
     }
 
     void bfs(int start) {
-        boolean visited[] = new boolean[adj.length];
+        boolean visited[] = new boolean[adj.size()];
         Queue<Integer> queue = new LinkedList<>();
 
         visited[start] = true;
@@ -25,7 +26,7 @@ public class BFS {
             int node = queue.poll();
             System.out.print(node + " ");
 
-            for (int n : adj[node]) {
+            for (int n : adj.get(node)) {
                 if (!visited[n]) {
                     visited[n] = true;
                     queue.add(n);
