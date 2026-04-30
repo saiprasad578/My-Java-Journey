@@ -8,7 +8,8 @@ public class BalancedParentheses {
         for (char ch : str.toCharArray()) {
             if (ch == '(' || ch == '{' || ch == '[') {
                 stack.push(ch);
-            } else {
+            } 
+            else if (ch == ')' || ch == '}' || ch == ']') {
                 if (stack.isEmpty())
                     return false;
 
