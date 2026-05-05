@@ -1,4 +1,4 @@
-public class SimpleHash {
+public class Solution91 {
     public static void main(String[] args) {
         int number = 12345;
         int tableSize = 10;
