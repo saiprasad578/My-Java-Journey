@@ -1,6 +1,6 @@
-class SafeBank {
+class Solution97 {
     long[] accounts;
-    public SafeBank(long[] balance) {
+    public Solution97(long[] balance) {
         this.accounts = balance;
     }
     private boolean inRange(int acc) {

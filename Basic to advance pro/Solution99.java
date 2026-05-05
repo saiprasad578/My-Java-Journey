@@ -1,4 +1,4 @@
-class rope {
+class Solution99 {
     public int minCost(String colors, int[] neededTime) {
         int totalTime = 0;
         int maxTime = 0;

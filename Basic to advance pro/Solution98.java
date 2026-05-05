@@ -1,4 +1,4 @@
-class rope2 {
+class Solution98 {
     public void moveZeroes(int[] nums) {
         int index = 0;
         for (int i = 0; i < nums.length; i++) {

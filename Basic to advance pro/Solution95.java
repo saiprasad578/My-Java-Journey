@@ -1,7 +1,7 @@
 import java.io.*;
 import java.net.*;
 
-public class Server {
+public class Solution95 {
     public static void main(String[] args) {
         int port = 5000; // Port number for server
         try (ServerSocket serverSocket = new ServerSocket(port)) {
