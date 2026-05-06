@@ -1,4 +1,4 @@
-public class FactorialRecursion {
+public class Solution100 {
 
     static int factorial(int n) {
         if (n == 0 || n == 1) {   // Base case
