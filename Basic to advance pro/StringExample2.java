@@ -1,6 +1,8 @@
-public class string {
+public class StringExample2 {
     public static void main(String[] args) {
+
         String greeting = "Hello, World!";
+
         int length = greeting.length();
         String upperCaseGreeting = greeting.toUpperCase();
         String subString = greeting.substring(7, 12);
@@ -9,6 +11,5 @@ public class string {
         System.out.println("Length: " + length);
         System.out.println("Uppercase: " + upperCaseGreeting);
         System.out.println("Substring: " + subString);
-        
     }
 }
