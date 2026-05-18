@@ -4,6 +4,7 @@ public class Main2 {
 
     private ArrayList<LinkedList<Integer>> adj;
 
+    // Constructor
     Main2(int v) {
         adj = new ArrayList<>();
 
@@ -12,10 +13,12 @@ public class Main2 {
         }
     }
 
+    // Add edge
     void addEdge(int v, int w) {
         adj.get(v).add(w);
     }
 
+    // DFS Utility Function
     void dfsUtil(int v, boolean[] visited) {
 
         visited[v] = true;
@@ -27,10 +30,10 @@ public class Main2 {
             if (!visited[n]) {
                 dfsUtil(n, visited);
             }
-
         }
     }
 
+    // DFS Function
     void dfs(int start) {
 
         boolean[] visited = new boolean[adj.size()];
