@@ -26,7 +26,7 @@ class Solution126 {
 public class Main {
     public static void main(String[] args) {
 
-        Student s1 = new Student();
+        Solution126 s1 = new Solution126();
 
         s1.setName("Sai Prasad");
         s1.setAge(20);
