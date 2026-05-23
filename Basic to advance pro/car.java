@@ -1,10 +1,10 @@
 class Car {
 
-    // Private variables
+
     private String brand;
     private int speed;
 
-    // Setter methods
+
     public void setBrand(String b) {
         brand = b;
     }
@@ -13,7 +13,7 @@ class Car {
         speed = s;
     }
 
-    // Getter methods
+ 
     public String getBrand() {
         return brand;
     }
