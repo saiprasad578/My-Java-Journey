@@ -1,4 +1,4 @@
-class Mobile {
+class mobile {
 
     
     private String model;
