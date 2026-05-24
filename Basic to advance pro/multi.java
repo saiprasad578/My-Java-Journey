@@ -1,8 +1,23 @@
-public class multi {
+import java.util.Scanner;
+
+public class Multi {
     public static void main(String[] args) {
-        int a = 5;
-        int b = 10;
+
+        Scanner sc = new Scanner(System.in);
+
+        // Taking input from user
+        System.out.print("Enter first number: ");
+        int a = sc.nextInt();
+
+        System.out.print("Enter second number: ");
+        int b = sc.nextInt();
+
+        // Multiplication
         int c = a * b;
-        System.out.println("The multiplication of " + a + " and " + b + " is: " + c);
+
+        // Display result
+        System.out.println("Multiplication of " + a + " and " + b + " is: " + c);
+
+        sc.close();
     }
 }
