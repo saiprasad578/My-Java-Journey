@@ -1,15 +1,26 @@
-public class Student_name_age {
+public class StudentNameAge {
+
     String name;
     int age;
 
+    // Constructor
+    StudentNameAge(String n, int a) {
+        name = n;
+        age = a;
+    }
+
+    // Display method
     void display() {
-        System.out.println(name + " " + age);
+        System.out.println("Student Name: " + name);
+        System.out.println("Student Age: " + age);
     }
 
     public static void main(String[] args) {
-        Student_name_age src = new Student_name_age();
-        src.name = "Amit";
-        src.age = 20;
-        src.display();
+
+        // Creating object using constructor
+        StudentNameAge student1 = new StudentNameAge("Amit", 20);
+
+        // Calling display method
+        student1.display();
     }
 }
