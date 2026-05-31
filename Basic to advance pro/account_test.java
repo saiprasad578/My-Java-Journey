@@ -14,7 +14,7 @@ class Account {
     }
 }
 
-public class Main {
+public class account_test {
     public static void main(String[] args) {
 
         Account a = new Account();
