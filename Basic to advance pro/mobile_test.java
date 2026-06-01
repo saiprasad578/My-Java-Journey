@@ -22,10 +22,10 @@ class mobile {
     }
 }
 
-public class Main {
+public class mobile_test {
     public static void main(String[] args) {
 
-        Mobile m1 = new Mobile();
+        mobile m1 = new mobile();
 
         m1.setModel("Samsung");
         m1.setPrice(25000);
