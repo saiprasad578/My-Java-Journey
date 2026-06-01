@@ -28,7 +28,7 @@ class BankAccount {
     }
 }
 
-public class Main {
+public class BankAccountTest {
     public static void main(String[] args) {
 
         BankAccount acc = new BankAccount();
