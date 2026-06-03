@@ -1,18 +1,18 @@
 class Solution3 {
-    public int coinChange(int[] coins, int amount) {
-        int[] dp = new int[amount + 1];
+    public int maxSubArray(int[] nums) {
+        int sum = 0;
+        int max = Integer.MIN_VALUE;
 
-        Arrays.fill(dp, amount + 1);
-        dp[0] = 0;
+        for (int num : nums) {
+            sum += num;
 
-        for (int i = 1; i <= amount; i++) {
-            for (int coin : coins) {
-                if (coin <= i) {
-                    dp[i] = Math.min(dp[i], dp[i - coin] + 1);
-                }
+            max = Math.max(max, sum);
+
+            if (sum < 0) {
+                sum = 0;
             }
         }
 
-        return dp[amount] > amount ? -1 : dp[amount];
+        return max;
     }
 }
