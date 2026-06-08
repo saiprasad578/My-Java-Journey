@@ -8,7 +8,7 @@ class Solution136 {
     }
 }
 
-public class Main {
+public class Solution136Main {
     public static void main(String[] args) {
         Solution136 s1 = new Solution136(); // Error
 
