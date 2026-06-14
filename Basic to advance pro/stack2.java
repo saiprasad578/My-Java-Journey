@@ -9,6 +9,7 @@ public class Stack2 {
         s.push(15);
 
         System.out.println("Stack: " + s);
+        System.out.println("Top Element: " + s.peek());
 
         s.pop();
         System.out.println("After pop: " + s);
