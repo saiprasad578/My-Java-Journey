@@ -1,6 +1,11 @@
+import java.util.Scanner;
+
 public class Solution140 {
     public static void main(String[] args) {
-        int marks = 85;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter marks: ");
+        int marks = sc.nextInt();
 
         if (marks >= 90) {
             System.out.println("Grade A");
@@ -11,5 +16,7 @@ public class Solution140 {
         } else {
             System.out.println("Fail");
         }
+
+        sc.close();
     }
 }
