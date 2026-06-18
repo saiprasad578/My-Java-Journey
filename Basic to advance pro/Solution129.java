@@ -1,4 +1,4 @@
-public class SpiralMatrix2 {
+public class Solution129 {
     public static void main(String[] args) {
         int n = 4; // Size of the matrix
         int[][] matrix = new int[n][n];
