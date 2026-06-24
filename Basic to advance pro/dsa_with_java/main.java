@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+public class main {
     public static void main(String[] args) {
         int[][] teacher = {
             {1, 2, 3},
