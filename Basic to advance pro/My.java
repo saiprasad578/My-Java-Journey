@@ -20,7 +20,7 @@ class Student {
     }
 }
 
-public class StudentManagement {
+public class My-Java-Journey/Basic to advance pro/Student.java {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         ArrayList<Student> students = new ArrayList<>();
