@@ -1,4 +1,6 @@
-class Solution149 {
+import java.util.HashMap;
+
+class Solution {
     public int maxNumberOfBalloons(String text) {
         HashMap<Character, Integer> map = new HashMap<>();
 
