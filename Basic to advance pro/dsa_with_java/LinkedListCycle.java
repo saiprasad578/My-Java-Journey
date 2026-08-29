@@ -34,11 +34,6 @@ public class LinkedListCycle {
         head.next = new Node(20);
         head.next.next = new Node(30);
         head.next.next.next = new Node(40);
-
-        // Create a cycle:
-        // 40 -> 20
-        head.next.next.next.next = head.next;
-
         if (hasCycle(head)) {
             System.out.println("Cycle detected in the linked list.");
         } else {
