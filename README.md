@@ -1,27 +1,33 @@
 # ☕ Java Learning Journey
 
-A daily log of my **Java learning journey** — from programming fundamentals to **OOP, Data Structures & Algorithms, and practical problem-solving**.
+Welcome to my **Java Learning Journey** 🚀
 
-This repository contains simple, well-organized Java programs created through consistent practice, with a focus on understanding the **logic behind every program**.
+This repository documents my daily progress in Java — from the fundamentals to **Object-Oriented Programming, Data Structures & Algorithms, and practical problem-solving**.
+
+The goal is not just to write code, but to understand the **logic and concepts behind every program**.
 
 ---
 
 ## 🚀 About This Repository
 
-This repository represents my journey of learning and practicing Java step by step.
+This repository contains Java programs that I build while learning and practicing different concepts.
 
-### What you'll find here:
+### 📚 What I'm Learning
 
-- 📚 Java fundamentals and core concepts
-- 🧠 Logic building and problem-solving
-- 🔄 Data Structures & Algorithms
+- ☕ Java Fundamentals
+- 🧩 Operators & Control Statements
+- 🔁 Loops & Pattern Programs
 - 🏗️ Object-Oriented Programming
-- 🔍 Searching and Sorting
-- 🌳 Trees, Graphs, Heaps & Tries
-- 💻 Practical Java programs
-- 📈 Continuous learning and improvement
+- 🧠 Data Structures & Algorithms
+- 🔍 Searching & Sorting
+- 🌳 Trees & Heaps
+- 🕸️ Graph Algorithms
+- 🔤 Trie & String Algorithms
+- 🔄 Recursion & Backtracking
+- 💡 Problem-Solving Techniques
+- 🛠️ Java Mini Projects
 
-> **The goal is not just to write code, but to understand how and why it works.**
+> **Learn → Code → Understand → Practice → Improve**
 
 ---
 
@@ -31,8 +37,11 @@ This repository represents my journey of learning and practicing Java step by st
 My-Java-Journey/
 │
 ├── Java-Basics/
+│
 ├── Operators/
+│
 ├── Control-Statements/
+│
 ├── Pattern-Programs/
 │
 ├── OOP/
@@ -47,6 +56,7 @@ My-Java-Journey/
 │   ├── Arrays/
 │   ├── Strings/
 │   ├── Recursion/
+│   ├── Backtracking/
 │   ├── Linked-List/
 │   ├── Stack/
 │   ├── Queue/
