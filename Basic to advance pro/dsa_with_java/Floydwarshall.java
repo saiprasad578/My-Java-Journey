@@ -59,6 +59,6 @@ public class Floydwarshall {
             {2,   INF, INF, 0}
         };
 
-        floydWarshall(graph);
+        floydwarshall(graph);
     }
 }
