@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class directed {
+public class Directed {
 
     static boolean dfs(int node,
                        ArrayList<ArrayList<Integer>> graph,

@@ -7,7 +7,6 @@ class SharedBuffer {
     private final int capacity = 5;
 
     synchronized void produce(int value) throws InterruptedException {
-
         while (queue.size() == capacity) {
             wait();
         }
@@ -15,11 +14,10 @@ class SharedBuffer {
         queue.add(value);
         System.out.println("Produced: " + value);
 
-        notify();
+        notifyAll(); // Wakes all threads so a consumer is guaranteed to wake
     }
 
     synchronized int consume() throws InterruptedException {
-
         while (queue.isEmpty()) {
             wait();
         }
@@ -27,7 +25,7 @@ class SharedBuffer {
         int value = queue.poll();
         System.out.println("Consumed: " + value);
 
-        notify();
+        notifyAll(); // Wakes all threads so a producer is guaranteed to wake
 
         return value;
     }
@@ -40,9 +38,7 @@ public class ProducerConsumer {
         SharedBuffer buffer = new SharedBuffer();
 
         Thread producer = new Thread(() -> {
-
             for (int i = 1; i <= 10; i++) {
-
                 try {
                     buffer.produce(i);
                     Thread.sleep(300);
@@ -50,13 +46,10 @@ public class ProducerConsumer {
                     Thread.currentThread().interrupt();
                 }
             }
-
         });
 
         Thread consumer = new Thread(() -> {
-
             for (int i = 1; i <= 10; i++) {
-
                 try {
                     buffer.consume();
                     Thread.sleep(500);
@@ -64,7 +57,6 @@ public class ProducerConsumer {
                     Thread.currentThread().interrupt();
                 }
             }
-
         });
 
         producer.start();
