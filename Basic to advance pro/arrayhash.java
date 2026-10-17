@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ArrayHash {
+public class arrayhash {
 
     static int[] hashTable = new int[10];
 

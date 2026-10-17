@@ -1,4 +1,4 @@
-class BankAccount {
+class Bank_Account {
 
     // Private data
     private double balance;
@@ -28,10 +28,10 @@ class BankAccount {
     }
 }
 
-public class BankAccountTest {
+public class Bank_AccountTest {
     public static void main(String[] args) {
 
-        BankAccount acc = new BankAccount();
+        Bank_Account acc = new Bank_Account();
 
         acc.setBalance(5000);
 
