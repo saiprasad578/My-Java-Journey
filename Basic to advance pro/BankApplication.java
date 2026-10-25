@@ -1,4 +1,4 @@
-class bank {
+class BankAccount {
 
     private int balance = 10000;
 
