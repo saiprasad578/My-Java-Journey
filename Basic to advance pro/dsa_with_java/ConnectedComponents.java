@@ -1,3 +1,4 @@
+
 import java.util.*;
 
 public class ConnectedComponents {
@@ -5,6 +6,7 @@ public class ConnectedComponents {
     private int vertices;
     private LinkedList<Integer>[] adjList;
 
+    @SuppressWarnings("unchecked")
     ConnectedComponents(int v) {
         vertices = v;
         adjList = new LinkedList[v];
@@ -16,7 +18,7 @@ public class ConnectedComponents {
 
     void addEdge(int source, int destination) {
         adjList[source].add(destination);
-        adjList[destination].add(source); // Undirected Graph
+        adjList[destination].add(source);
     }
 
     void dfs(int vertex, boolean[] visited) {
@@ -49,12 +51,9 @@ public class ConnectedComponents {
 
         graph.addEdge(0, 1);
         graph.addEdge(1, 2);
-
         graph.addEdge(3, 4);
 
-        // Vertex 5 is isolated
-
-        System.out.println("Number of Connected Components: " +
-                graph.countComponents());
+        System.out.println("Number of Connected Components: "
+                + graph.countComponents());
     }
 }
